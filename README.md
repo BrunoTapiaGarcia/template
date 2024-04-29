@@ -45,3 +45,5 @@ Confusion matrix: Explain each error and its associated risks for the business.
 Dataset
 
 facebook_live_data.xlsx
+
+Project: Tapia_ Bruno_A1 Unsupervised Analysis_project (Individual) (1).ipynb
