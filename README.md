@@ -1,26 +1,47 @@
 
 Classification Modeling
 
-Objective The bike sharing industry has grown tremendously in recent years, with an estimated global value of $2.8 billion in 2023. This is due to a number of factors, such as convenience, sustainability, and physical fitness. As a result of the market's growth, your client, a major city in the United States, has tasked you with developing a machine learning model to predict the number of bike rentals on a given day, as well as to provide insights into the factors that contribute to bike rental demand.
+Unsupervised Analysis Project
 
-The Client The Cook County Planning and Development Department, responsible for the Chicago metropolitan area in the United States.
+Case Information
+
+A marketing consulting firm in Thailand has asked you to read the following research on Usage and Engagement Patterns for Facebook Live Sellers in Thailand Download Usage and Engagement Patterns for Facebook Live Sellers in Thailand.
+
+ 
+
+Objective
+
+Analyze the impact of photo content. In short, your company has long operated under the general idea that photos  are the most engaging form of social media content and that they should advise their clients to post as many of these as they can. 
+
+ 
+
+Analysis Tasks/Questions
+
+Provide an introduction to your analysis. 
+
+In terms of reactions (likes, loves, etc.), how do photos perform when compared to other forms of content? Are they leading in terms of total engagement? What about in engagement on specific reactions? 
+Develop principal components (PCA) based on the available social media metrics in the dataset. You may choose to group or exclude metrics as you see fit. 
+Develop a scree plot and determine how many principal components you would like to retain. Draw a vertical line in the scree plot to indicate your cutoff point. 
+Present the factor loadings for the retained principal components (correlations with the original features).
+Interpret each of your retained principal components. 
+Rename each principal component based on your interpretation of what it represents.
+Develop segmentation with k-means clustering, using your retained principal components. You may also include additional features in your segmentation (avoid reusing features that were loaded into the principal components).
+Decide on an ideal number of clusters and explain your rationale. 
+Present and interpret each segment using cluster centroids and give an example of a "normal" post for each segment. 
+Rename each segment based on your interpretation of what it represents.
+Analyze the status types of each segment and report any findings related to photos. 
+
+Develop three logistic regression models (1 = photo, 0 = not photo), each based on the following x-features.
+Model 1: Original x-features
+Model 2: Retained principal components
+Model 3: Retained clusters
+
+Select your best model from above and present the following:
+Your rationale for why this is the best model. 
+Model results: train-test gap based on accuracy and AUC score based on the results of the .predict step)
+Confusion matrix: Explain each error and its associated risks for the business. 
+ 
 
 Dataset
 
-chicago_training_data.xlsxDownload chicago_training_data.xlsx
-
-Kaggle Link
-
-https://www.kaggle.com/t/0ca16390d1544b3fb4ae6a5fdd25294cLinks to an external site.
-
-Model Types
-
-Model Type Method In Scikit-Learn: OLS Linear Regression linear_model.LinearRegression() Lasso Regression linear_model.Lasso() Ridge Regression linear_model.Ridge() Elastic Net Regression linear_model.SGDRegressor() K-Nearest Neighbors neighbors.KNeighborsRegressor() Decision Tree Regressor tree.DecisionTreeRegressor()
-
-Modeling Steps
-
-Package and Dataset Imports Exploratory Data Analysis and Data Preprocessing EDA - descriptive statistics, histograms, correlation, etc. DP - missing value imputation, transformations, etc. Feature Engineering (at least three features have been engineered and their rationales have been explained) Candidate Model Development One model from each permitted modeling type has been developed (see Permitted Model Types). Choose your best model from each model type. Hyperparameter tuning has been performed on your top three models. Final Model Selection It is clear which model was selected as the final model and the rationale for choosing this model is sound.
-
-Analysis
-
-Analysis Introduction Exploratory Data Analysis and Data Preprocessing . Each data visualization is explained with at least 5 sentences. Feature Engineering Candidate Model Development and Final Model Selection
+facebook_live_data.xlsx
